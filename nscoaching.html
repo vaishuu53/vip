@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumStats Coaching</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #3498db;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to NumStats Coaching</h1>
+    </header>
+
+    <nav>
+        <a onclick="showHome()">Home</a>
+        <a onclick="showAbout()">About Us</a>
+        <a onclick="showEvents()">Events</a>
+        <a onclick="showPhotos()">Photos</a>
+        <a onclick="showContact()">Contact</a>
+    </nav>
+
+    <section id="home"><!--Direct link to the image file-->
+        <img src="https://i.ibb.co/sjFyd0v/ns-logo.jpg" alt="ns-logo" border="0" />
+
+        <h2>Empowering Students Since 2008</h2>
+    </section>
+    <section id="about" style="display: none;">
+        <h2>About Us</h2>
+        <p>NS : Empowering Students Since 2008</p>
+
+        <p>About Us:
+            Established in 2008, NS has been a pioneer in nurturing students and providing holistic development. With a steadfast commitment to excellence, we have become a trusted partner in shaping the future of countless students. We build success stories on the three foundational pillars of focus – Knowledge, Health, and Behavior.</p>
+
+        <p>Our Approach:
+            At NS, we believe in going beyond the realm of conventional education. We strive to inculcate a balance of knowledge, mental well-being, and exemplary conduct in our students. Through our comprehensive programs, we aim to equip students with the skills and resilience necessary to thrive in today's competitive world.</p>
+         
+        <p>Our Mission:
+            Our mission is simple yet profound: to provide quality education, instill moral values, and promote mental well-being among our students. We are dedicated to nurturing not only academic achievers but also compassionate and well-rounded individuals who contribute positively to society.</p>
+
+        <p>What Sets Us Apart:
+            Personalized Support: We understand that each student is unique and thus offer personalized attention and guidance to help him/her attain his/her maximum potential.
+            Holistic Development: Beyond academic success, we focus on developing essential life skills, fostering mental resilience, and nurturing strong character traits.
+            Continuous Improvement:We are committed to staying abreast with the latest educational trends and continually enhancing our programs to meet the evolving needs of students.</p>
+
+        <p>Our Services:
+            Academic Excellence:Our experienced faculty members are dedicated to imparting knowledge and skills that go beyond textbooks, ensuring students excel academically.
+            Moral Education:Ethics, integrity, and empathy are the core values that we instill in our students to help them become responsible and principled individuals.
+            Mental Wellness: Through counseling services and stress management techniques, we prioritize the mental health and well-being of our students, creating a supportive environment dedicated to their growth.</p>
+
+        <p>Join Us Today:
+            Embark on a journey of self-discovery and academic excellence with NS. Let us be your partner in realizing your dreams and aspirations. Together, we'll pave the way for a brighter future.
+            Contact us to learn more and enroll in our transformative programs. Your success starts here at NS.</p>
+    </section>
+
+<section id="events" style="display: block;">
+        <h2>Events</h2>
+
+        <!-- Event 1 -->
+        <div class="event">
+            <a href="https://ibb.co/y6gJJDs"><img src="https://i.ibb.co/zXPww1f/opening.jpg" alt="opening" border="0"></a>"
+            <h3>Event 1:new branch opening</h3>
+            <p>Date: [19 feb 2024]</p>
+            <p>Description: [Grand opening of NS new branch.]</p>
+        </div>
+     </section>
+       
+    <section id="photos" style="display: none;">
+        <h2>Photos</h2>
+        <p>View snapshots from our past events and programs.</p>
+        <!-- Add your photos content here -->
+    </section>
+
+
+    <section id="contact" style="display: none;">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for any inquiries or assistance.</p>
+        <p>Mobile: 9987368164 / 8108084200</p>
+        <p>Email: <a href="mailto:numstatscoaching@gmail.com">numstatscoaching@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NumStats Coaching</p>
+    </footer>
+
+    <script>
+        function showHome() {
+            document.getElementById('home').style.display = 'block';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('events').style.display = 'none';
+            document.getElementById('photos').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+        }
+
+        function showAbout() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'block';
+            document.getElementById('events').style.display = 'none';
+            document.getElementById('photos').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+        }
+         function showEvents() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('events').style.display = 'block';
+            document.getElementById('photos').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+        }
+
+
+        function showPhotos() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('events').style.display = 'none';
+            document.getElementById('photos').style.display = 'block';
+            document.getElementById('contact').style.display = 'none';
+        }
+
+
+
+        function showContact() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('events').style.display = 'none';
+            document.getElementById('photos').style.display = 'none';
+            document.getElementById('contact').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
